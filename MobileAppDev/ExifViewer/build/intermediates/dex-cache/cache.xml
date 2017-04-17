@@ -1,2 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_d07db9e18e083d119f99ec2e97e3d24cb2dfd167/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_9e8d99640868d0bf62dbfa9d9b2cdf95d4a8a434/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_17169f578a5822f600dd7feced16070101dcc89b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_03eb48577f81042d1c6594eb7eab07fa8438a9fa/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_54a9613343610f45ea9de0ae39b6416d612f2a45/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_1772498c8dace1d77c224d92b5836a8f81de3e24/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="716884adce4903051fa359640eb8b9a9867906bd">
+        <dex dex="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bd186aae7d0e3cce8d408ab43eaf8ebc34320732/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="dd2f285b4ce7fef709162ea83c3a137dc85555c1">
+        <dex dex="/Users/paige/Desktop/SchoolProjects/MobileAppDev/ExifViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5c7544493e1af40629134044ed767b99f7acf87c/classes.dex" />
+    </item>
+
+</items>
