@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ExifViewer</string>
+    <string name="StringCamera">Capture</string>
+</resources>

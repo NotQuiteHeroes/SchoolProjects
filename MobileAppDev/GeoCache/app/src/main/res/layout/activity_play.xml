@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mobile.rasmussen.edu.geocache.PlayActivity"
+    android:background="@color/BackgroundDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentCoordinates"
+        android:text="@string/StringCoordinates"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CurrentLongitude"
+        android:text="@string/StringLongitude"
+        android:textSize="20sp"
+        android:layout_below="@+id/currentCoordinates"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CurrentLatitude"
+        android:text="@string/StringLatitude"
+        android:textSize="20sp"
+        android:layout_below="@+id/CurrentLongitude"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CurrentLatitude">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/ButtonShaw"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/StringShaw"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/ButtonWild"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/StringWild"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/ButtonSleepless"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/StringSleepless"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/ButtonSongbird"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/StringSongbird"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/ButtonFruit"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/StringFruit"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

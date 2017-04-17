@@ -1,0 +1,21 @@
+//Paige Eckstein
+// 7/17/15
+// This program is to receive input for a measurement in cups, which will then be converted
+// into gallons, quarts, pints, tablespoons, and teaspoons. 
+
+//Declare constants for calculations
+Constant Real GALLON = .0625, QUART = .25, PINT = .5, TBSP = 16, TSP = 48
+
+//Declare variable to hold input
+Declare Real cups
+
+//Ask for amount of cups to be converted and store number in cups variable
+Display “Please enter number of cups to convert: “
+Input cups
+
+//Display and conversions
+Display cups + “ cup(s) is “ + (GALLON*cups) + “ gallons”
+Display cups + “ cup(s) is “ + (QUART*cups) + “ quarts”
+Display cups + “ cup(s) is “ + (PINT*cups) + “ pints”
+Display cups + “ cup(s) is “ + (TBSP*cups) + “ tablespoons”
+Display cups + “ cup(s) is “ + (TSP*cups) + “ teaspoons”

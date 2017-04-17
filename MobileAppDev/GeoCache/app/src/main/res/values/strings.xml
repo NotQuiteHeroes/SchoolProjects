@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">GeoCache</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_main">Home</string>
+
+    <string name="StringPlay">Play</string>
+    <string name="StringTreasures">Treasures</string>
+    <string name="StringProfile">Profile</string>
+    <string name="StringSave">Save</string>
+    <string name="StringHome">Home</string>
+    <string name="StringCoordinates">Current Coordinates:</string>
+    <string name="StringAnswerWhere">General location:</string>
+    <string name="StringAnswerWhat">Where found:</string>
+    <string name="StringSubmit">Submit</string>
+    <string name="StringHint">Hint</string>
+    <string name="Points">Points:</string>
+    <string name="StringText">Text Me!</string>
+
+    <!-- Strings for Treasure Activity -->
+    <string name="ShawDescription">Take a stroll amongst the trees. You\'ll find this treasure at the feet of Shaw\'s bard.</string>
+    <string name="ShawHint1">Look to the towering heights that require no climbing.</string>
+    <string name="ShawHint2">Maybe if you see Romeo he can give you a hint.</string>
+    <string name="shawMessage">Head for the market. Going in circles never helps anyone.</string>
+
+    <string name="WildDescription">Fight through the jungles for this treasure,
+    passing the old polar bear. You\'ll find it in the hands of the gentle giant.</string>
+    <string name="WildHint1">If you stray too much you might end up amongst the elephants or penguins.</string>
+    <string name="WildHint2">Phil seems to have bronzed nicely with age.</string>
+    <string name="wildMessage">Don\'t stay too long with the sea lions, Phil\'s waiting just up ahead!</string>
+
+    <string name="SleeplessDescription">Say hello to Burroughs, or maybe grandfather Busch. Don\'t stop, though, for it is the explorer you seek. </string>
+    <string name="SleeplessHint1">While you won\'t find Lewis here, seek his companion for your treasure.</string>
+    <string name="SleeplessHint2">This location may have been dedicated in 1850, but it has residents that far surpass it in age. </string>
+    <string name="sleeplessMessage">It shouldn\'t be too hard to find his tower, you\'ll even be greated by his smiling face!</string>
+
+    <string name="SongBirdDescription">Time to visit the birds. Grab them a snack of peanuts and cracker jacks. Just make sure you stop and see the man! </string>
+    <string name="SongBirdHint1">It is easy to confuse him with the bridge, but you will need to see the man himself to claim your treasure.</string>
+    <string name="SongBirdHint2">If you don\'t get this hint, it\'ll be three strikes, you\'re out!</string>
+    <string name="songBirdMessage">Look for the tree on the famous stage, the man is waiting!</string>
+
+    <string name="FruitDescription">Time to hike up the hill, maybe you will find a Berry! Look for a fowl friend for your treasure. </string>
+    <string name="FruitHint1">Don\'t be so blue, if you\'re goode you\'ll find the treasure! </string>
+    <string name="FruitHint2">The flock likes its rock n\' roll loud, so they have their own space just down some stairs.</string>
+    <string name="fruitMessage">Maybe you can catch the trolley, make sure you\'re not just going in loops, though!</string>
+    <!-- Strings for nearby TreasureActivity buttons -->
+    <string name="StringShaw">Shaw\'s Bard</string>
+    <string name="StringWild">Into the Wild</string>
+    <string name="StringSleepless">The Sleepless</string>
+    <string name="StringSongbird">Songbirds</string>
+    <string name="StringFruit">Fresh Fruit</string>
+
+    <!-- Strings for TreasureStorage activity -->
+    <string name="StringTreasureName">Treasure Name:</string>
+    <string name="StringDate">Date Discovered:</string>
+    <string name="StringLongitude">Longitude:</string>
+    <string name="StringLatitude">Latitude:</string>
+    <string name="StringDescription">Description...</string>
+    <string name="StringLoad">Load</string>
+    <string name="StringBack">Back</string>
+    <string name="StringCurrentLong">Longitude: %1$,.1f</string>
+    <string name="StringCurrentLat">Latitude: %1$,.1f</string>
+
+    <string name="StringPoints">Points: %1$d</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

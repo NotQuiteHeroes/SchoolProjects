@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@color/BackgroundDark"
+    android:fillViewport="true"
+    tools:context="mobile.rasmussen.edu.geocache.TreasureStorageActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:background="#e3c87f">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:singleLine="false"
+            android:textSize="26sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Treasure"
+            android:inputType="textCapWords"
+            android:hint="@string/StringTreasureName"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Date"
+            android:hint="@string/StringDate"
+            android:inputType="date"
+            android:layout_below="@+id/Treasure"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Longitude"
+            android:hint="@string/StringLongitude"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_below="@+id/Date"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Latitude"
+            android:hint="@string/StringLatitude"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_below="@+id/Longitude"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Description"
+            android:inputType="textMultiLine"
+            android:hint="@string/StringDescription"
+            android:lines="5"
+            android:layout_below="@+id/Latitude"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SaveButton"
+            android:text="@string/StringSave"
+            android:layout_weight="0"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@+id/Description"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BackButton"
+            android:text="@string/StringBack"
+            android:background="@drawable/rounded_button"
+            android:layout_alignTop="@+id/loadButton"
+            android:layout_alignParentStart="true" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loadButton"
+            android:text="@string/StringLoad"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@+id/SaveButton"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/HomeButton"
+            android:text="@string/StringHome"
+            android:layout_below="@+id/Description"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/rounded_button"/>
+
+    </RelativeLayout>
+</ScrollView>

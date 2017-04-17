@@ -1,0 +1,38 @@
+Pseudocode:
+//Paige Eckstein
+//8/2/2015
+//This program performs exponential calculations
+
+ //Declare variables
+Integer base
+Integer exponent
+Integer result
+Integer counter
+Integer maxValue = exponent
+Integer original_base = base
+
+//Main module
+Module main(Integer Ref base, Integer Ref exponent, Integer Ref result):
+     Display(“Please enter two numbers, the first being the base number and the second being the         exponent.”)
+     Input base, exponent
+     If base >= 2147483647e10 OR exponent >= 2147483647e10 Then
+          Display(“I’m sorry, that number is too large. Please enter another number.”)
+          main()
+     End If
+     result = calculations(base, exponent)
+     Display result
+
+#Module to perform calculations
+Module calculations(Integer maxValue, Integer original_base, Integer Ref counter, Integer base, Integer exponent, Integer Ref result): 
+     For counter = 1 to maxValue
+          base = base * original_base
+          result = base 
+          If result > 2147483647e10 Then
+               Display(“Result is too large to store, please try again with different numbers.”)
+               main()
+          End If
+     End For
+     return result
+
+#Call to main module
+main()

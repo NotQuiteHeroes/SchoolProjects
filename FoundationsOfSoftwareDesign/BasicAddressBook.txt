@@ -1,0 +1,60 @@
+Pseudocode:
+//Paige Eckstein
+//8/16/2015
+//Allows access to an address book: add, search, display  
+Constant Integer SIZE = 100
+Declare String names[SIZE]
+Declare String addresses[SIZE]
+Declare Integer numbers[SIZE]
+
+Module main():
+     Declare String answer
+     Display “Please choose one: \n a. Enter Information\n b. Search\n c. Print all”    
+     Input answer
+     If answer == “a” Then
+          record()
+     Else if answer == “b” Then
+          search()
+     Else if answer == “c” Then
+          printAll()
+     Else
+          Display “I’m sorry, please type ‘a’, ‘b’, or ‘c’”
+          main()
+     End If
+Module record(Integer SIZE, String Ref names[], String Ref addresses[], Integer Ref numbers[]):
+     Declare Boolean full = False
+     Declare Integer index = 0
+     While full = False
+          Display “Please enter a name: “
+          Input names[index]
+          Display “Please enter an address: “
+          Input addresses[index]
+          Display “Please enter a number: “
+          Input numbers[index]
+          Set index = index + 1
+          If index > SIZE – 1 Then
+               Display “Cannot store, address book full.”
+               Set full = True
+          End If
+     End While
+Module String Search(Integer SIZE, String names[], String addresses[], Integer numbers[]):
+     Declare Boolean found = False
+     Declare Integer index = 0
+     Declare String searchTerm
+     Display “Please enter a name to search for: “
+     Input searchTerm
+     While found = False AND index <= SIZE – 1
+          If names[index] == searchTerm Then
+               Set found = True
+               Display setWidth(25) +  names[index]  + setWidth(100) + addresses[index] +  setWidth(15) + numbers[index]
+          Else
+               Set index = index + 1
+          End If
+     End While
+
+Module printAll(Integer SIZE, String names[], String addresses[], Integer numbers[]):
+     Declare Integer index = 0
+     While index < SIZE – 1
+          Display setWidth(25) + names[index] + setWidth(100) + addresses[index] + setWidth(15) + numbers[index]
+          index = index + 1
+     End While

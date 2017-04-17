@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="757da7cf57f3588dd696baef48893907743f7f3a">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5f9b2eb8912aee196eb874a56823aaf5b8be6f2b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.2.1_2254003a12cd114298bc9d580fb0ecee6ce90299/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="a65d98c9409f271d3209f4cc1f7d8e0391665fa5">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.2.1_c67b3150836933ea6c1d264f2624006328596698/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="05a2710d284c03087013a667a324c9e2aba5bc91">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.2.1_a8651a99d4565190efcdeb10f6b9e278a4d348c7/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="0765979e802b1669c90dc36076559461d5eb6ad1">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.2.1_cc20e08b918b32bc8c379fab5b5b446310688536/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="07c569a77f437c5c71eac8b1b636a50bebb69a93">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.2.1_3f099890a6987631dac6f724efaa72617932d427/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="310ef01419435979cc82847cf085799a8d00e7e9">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.2.1_b6e68bd845c713b47590ca4d7bd1d7430685eacf/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_752aec1bf14284f04067d89e10d8d981dd07a19e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6c09228ff931eb30b68dd27fe34ed90d978b6892">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.2.1_b171ef31618991d8bd016e74257580d60194ddc6/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="e719de687ac45141de3dd613907860a495580af0">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.2.1_18b35717c0982a56736c4e1549e999393b419e15/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="ee409046028e5657a2a69edaa2eba00d6511a74c">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.2.1_37f558d3344924908ea4b22217c9fe22c1350c0b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_54a9613343610f45ea9de0ae39b6416d612f2a45/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_3a451d9bac6f6de18cc9f473d26e02899d36179b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="ac78f93fc89c497a65f9d9a352cd405996d2f65a">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.2.1_7079196e093ff357b2f6aed83237c88c6f5aa397/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f06a0705d7b8b9d18b00d056fe0e07bec75514e6">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.2.1_28456dbcd12d97cc7af75754bafb13b23571040e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="3a42c5696fa39930d39770f7e5552a9c965fbe09">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.2.1_d9315ff34a4144714265606a74a66c17714f1058/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="48917c60ea81213ea39cbd7123996a5401106dc3">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.2.1_39478df4c9bd810bcbdc8ccd708b37c0da63c127/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="081ced8ab77e606b6743c27cfe93dc450447b046">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.2.1_385c7603309b66b319e88546ac8f88d81961f235/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6d2f508d1a9fa0fbe1653595e484800c08afb42c">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.2.1_db6c83955a2f83dfd8475b6f1a526430dc2e7b2c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.0_c7e962fe582aed60b456f72dee8be9015b39584d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="def5530cb13311617fc8f962e2a90225bb6904e2">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.2.1_b112c192e6887e618ec58a54e432d94280423605/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.1.1_610521316e7da67754619013d3d2eac649dd68e2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-23.0.0_7d93226890b4dd9c49816ac30a442ce539d34d5e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.2.1_36528ee6fbd9836a895a32aa86a067adb283dc40/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="edf9a22ebf25281619265079aec8f5d433da1a5c">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.2.1_7355585dad0b242b73caf30cea9cdb676fa3a4b2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="4b515e6e269bfe848f5b43ac09bce54d6617d4fd">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.2.1_d97ac12939d830a832910ae53425291b3c9fbe34/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6a0f2d219f82db499ac03d5a985c4eb3e83fc422">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.2.1_ca35790a123375a98267eb0d2126b2ff768e90bc/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-contextmanager/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="ccc963cafe59ce185c49f47baff7eedcb8589bdf">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-contextmanager-9.2.1_e3183d7f9e02292e461877b3fc8a11ca89d592cd/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_64805d2da92c45f28e4e0825e50c6bd158a7d904/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="05d2e01f33fb2097b51fce3f938dc37a75fe2d6b">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.2.1_709acbc48da93176a59fbb0f85fa609367f71be5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="152cba5ca28fd4a5191a8577a0fa96d61122041e">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-9.2.1_0f6e22c03e03421c4306d2fd8aba217679d825e0/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="0979debb5b4d955ddc0e80bb192f4f00c2f91750">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.2.1_a9ad88a278a1495c1f95311bc31272731c269b23/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="bbd51be332bace144b3d16501ec0af379c3c8750">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.2.1_ddd70d5da2689cea705a1c9f62e79e64d42aec79/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="8aada8a0e9e9b3ecdda5e80f17c6a51a468e302a">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-9.2.1_e17ab435880af60a7368ebabfd13999ebf338607/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_dfa6f41aea9fc30b9b1da2cdc549d1e4778e5ef4/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="9f2282b9fc24f24c69665032dede1bc7201cf006">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-9.2.1_6c6c77fd9efb4863913faee93c5f284443d751ba/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="2506c5893e125e2f9cfc522378e893620c21b109">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.2.1_5aa18606cd0ff227c6f6720623ab3f7c459cb36f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.android.support/design/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.1.1_3c90f1f6868dcfa22582f43ed4746a073b736aad/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1141496362c8876f0da4b645fbaf22c0a3618372">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-9.2.1_8931ce49cffa621f0b38269fc8427e4ffc4a5b00/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f3b0ff905873c91ab64addba30cc1e77bed34c4d">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.2.1_e3204e62b4ed51f399a15b16c76281fbfe3a94ce/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d064f813cd835f17853e39221b247cf6a997a2db">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.2.1_7f05941ab6d4f4fbaed9307b36fae94e0fa616be/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="e1bec33f1ec5367e25676638b430b9d585f3dbec">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.2.1_d6ac1bc92853879e7a4ab191a5e9f3a4a500e970/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="428c9bac95b2f72921224e289553a04bea61cda5">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.2.1_268c9149639e83c50cbbb36d5dfce3f75bf7d124/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="36e2b438f9b0d68fb2482c8f389e249e32840cff">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.2.1_207fab190192066b15ff165a79ce3ca977bd801f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="ee19e33a798d11a5cf309a40155b8223fadcdeea">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.2.1_bf2153e367a70263fca1e050814a3c0798a2de2a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="90eeba67a669f8fb24db0f821ef81703fe7a02bc">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.2.1_b23813ea1fff199db69820c48bbac84e46a4d248/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="dd1907a2e855eeb2be8aa3486f3d4d4f1c8b22af">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.2.1_3c6767d86dde7fbbae7a61cd9903999efaf1d26f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="3627eacd7f7cafb5e8ae683992e7b2f9b7dcab1a">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.2.1_8e422e605d3a579643d1d64bf950b3db3e3d758b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="b24c1a80d8ccaecee7b8b80209b4e273dc22b14d">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.2.1_709337413126b533686325647c8f4f21310f30af/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="89ab748a6c0ab6ac1d3671f2356d6181e8108bc5">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.2.1_315c491c8b751c250ed0fa0e3d62d202d22f271c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1297faeb07daff90cdb158cfa52edff299946bcb">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_364e32640858cbc409fdef7436a358e7e47dc5f4/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="4c2b01baa64ba25f8dbdf7f7f828bc5664dab55e">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-9.2.1_f48de1e51407275575edfa4f701aa56cf6c95f52/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="77e2e4803396fa79009ace04d9be84184aafcc31">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.2.1_3268d8571551ce144014d6d2de95cb041ac5d43a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="7bb417e9ac8645285342935679e75d371b58b62b">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.2.1_b1197b0c42126a89b338c2c4b2d377807499f163/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="357a8702c49044417d4856861c8f435e7c74ef09">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.2.1_a65725c4b0c6454b57f627a14064658db95afe44/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="5337354083e89ed67151859ab0b6b80935c60eaf">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.2.1_56111b7907294469e39a191ad538b0f02ee01fb7/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.2.1_697f7639a623992f2b6fcaa6edc5cd45b7a8dede/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_a00136b3d9f172ad7abff8b86af0a641e67233f4/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d41b5d21cc9dd7d210f0ae82ac509ba7f091d611">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.2.1_96e4e2666a9c0f079efeb47f34ae661199c9dc9b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="35a01d7cb4ff6b5976777bf5827fd8f206fb8757">
+        <dex dex="/Users/paige/AndroidStudioProjects/GeoCache/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.2.1_c6c00ed6a24646c78a476a80db0107dab36e7b27/classes.dex" />
+    </item>
+
+</items>

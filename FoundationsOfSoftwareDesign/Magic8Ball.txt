@@ -1,0 +1,39 @@
+Pseudocode:
+//Paige Eckstein
+//8/9/2015
+//Returns a pre-created answer to user input questions
+Module main():
+     Declare Integer count
+     question = get_question()
+     answer = answer_selection()
+     count = (give_answer(question, answer)) + 1
+     if count <= 9:
+          main()
+     else:
+          farewell()
+Function String get_question():
+     Declare String question
+     Display(“Please ask a question for the wisdom of the magic 8 ball.”)
+     Input question
+     return question
+
+Function String answer_selection():
+     Declare Constant ANSWERS = [“Yes”, “No”, “Without a doubt”, “Yes definitely”, “Outlook good”, “Don’t count on it”, “My sources say no”, “Very doubtful”, “Ask again later”, “Concentrate and ask again”]
+     Declare Constant SIZE = 9
+     Declare String answered[SIZE]
+     Declare String answer
+     While answered.size() <= SIZE:
+          Set answer = random(ANSWERS)
+          While answer in answered:
+               Set answer = random(ANSWERS)
+          End While
+          answered.append(answer)
+          Return answer
+     End While
+Function Integer give_answer(question, answer):
+     Declare Constant COUNT = 1
+     Display question
+     Display answer
+     return COUNT
+Module farewell():
+     Display “Thanks for using the magic 8 ball!”

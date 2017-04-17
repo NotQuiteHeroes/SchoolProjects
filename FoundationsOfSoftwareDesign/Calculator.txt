@@ -1,0 +1,191 @@
+PseudoCode:
+#Paige Eckstein
+#9/18/15
+#This program will perform basic calculations. It also has a temporary memory that can be
+# saved, changed, deleted, or used in calculations
+
+Declare Real memory
+Module main():
+    Call instructions()
+    Call menu_input()
+
+Module instructions():
+     Declare String instructions
+     instructions  = ””“Welcome to the calculator. To access memory at any time, type memory in the       prompt. To save the last number  to memory, type save in the prompt. To clear the memory, type clear in       the prompt. To see the number stored in memory, type print. To use the number in memory, simply type      memory in the prompt in place of a digit. To access these instructions at any time, type instructions into      the prompt.”””
+     Display instructions
+Module menu_input()
+Display “Please choose an operation: 1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. Exponentiation\n6. Quit”
+Input menuSelection
+If toLower(menuSelection) == “instructions”:
+     Call instructions()
+End If
+Select menuSelection
+     Case 1:
+          Call add()
+     Case 2:
+          Call subtract()
+     Case 3:
+          Call multiply()
+     Case 4:
+          Call divide()
+     Case 5:
+          Call exponent()
+     Case 6:
+          Call goAgain()
+     Default:
+          Display “I’m sorry, this is not a valid option. Please try option 1 through 6.”
+          Call menu_input()
+Module add(Real memory)
+Declare Integer size
+Declare Real resultAdd = 0.0
+Declare Integer index = 0
+Declare Real operands[size]
+Display “How many numbers will you be adding?”
+Input size
+Display “Please enter the numbers you wish to add, pressing enter after each number. Do not type a plus sign between numbers. Please press enter after seeing results to continue, or type a memory option(save, clear, print).”
+While index < size -1:
+     Display “ “
+     Input operands[index]
+     Set index = index + 1
+End While
+Set index = 0
+While index < size -2:
+     Display operands[index], “ + ”
+     Set index = index + 1
+End While
+Display operands[index + 1], “ equals:  “
+Set index = 0
+While index < size:
+     resultAdd = resultAdd + operands[index]
+     index = index + 1
+End While
+Display resultAdd
+endResult(resultAdd)
+
+
+Module subtract(Real memory):
+     Declare Real resultSub = 0.0
+     Declare Integer size
+     Declare Real operands[size]
+     Declare Integer index = 0
+     Display “How many numbers will you be subtracting?”
+     Input size
+     Display “Please enter the numbers you want to subtract, in order, pressing enter after each number. Do not add a subtraction sign between numbers. Please press enter after seeing results to continue, or type a memory option(save, clear, print).”
+     While index < size -1:
+          Display “ “
+          Input operands[index]
+          Set index = index + 1
+     End While
+     Set index = 0
+     While index < size – 2:
+          Display operands[index], “ – “
+          Set index = index + 1
+     End While
+     Display operands[index + 1], “ equals: “
+     Set index = 0
+     While index < size
+          resultSub = resultSub – operands[index]
+          Set index = index + 1
+     End While
+     Display resultSub
+     endResult(resultSub)
+
+Module multiply(Real memory):
+     Declare Real resultMult = 1.0
+     Declare Integer size
+     Declare Real operands[size]
+     Declare Integer index = 0
+     Display “How many numbers will you be multiplying?”
+     Input size
+     Display “Please enter the numbers you want to multiply, in order, pressing enter after each number. Do not add a multiplication sign between numbers. Please press enter after seeing results to continue, or type a memory option(save, clear, print)”
+     While index < size -1:
+          Display “”
+          Input operands[index]
+          Set index = index + 1
+      End While
+      Set index = 0
+     While index < size – 2:
+          Display operands[index], “ * ”
+          Set index = index + 1
+     End While
+     Display operands[index + 1], “ equals: “
+     Set index = 0
+     While index < size
+          resultMult = resultMult * operands[index]
+          Set index = index + 1
+     End While
+Display resultMult
+endResult(resultMult)
+
+Module divide(Real memory):
+     Declare Real resultDiv = 1.0
+     Declare Integer size
+     Declare Real operands[size]
+     Declare Integer index = 0
+     Display “How many numbers will you be dividing?”
+     Input size
+     Display “Please enter the numbers you want to divide, in order, pressing enter after each number. Do not add a division sign between numbers. Please press enter after seeing results to continue, or type a memory option(save, clear, print).”
+     While index < size -1:
+          Display “”
+          Input operands[index]
+          Set index = index + 1 
+     End While
+     Set index = 0
+     While index < size – 2:
+          Display operands[index], “ / “
+          Set index = index + 1
+     End While
+     Display operands[index + 1], “ equals: “
+     Set index = 0
+     While index < size
+          resultDiv = resultDiv / operands[index]
+          Set index = index + 1
+     End While
+     Display resultDiv
+     endResult(resultDiv)
+
+Module exponent(Real memory):
+     Declare Real base, exponent, num
+     Declare index = 1
+     Declare Real resultExpo
+     Display “Please enter the base number: “
+     Input base
+     Display “Please enter the exponent: “
+     Input exponent
+     Set num = exponent
+     While index < exponent – 1:
+          Set num = base * num
+          Set index = index + 1
+     End While
+     Set resultExpo = num
+     endResult(resultExpo)
+                
+Function endResult(Real Ref memory, Real result):
+    Declare String endResult
+     Display “ “
+     Input endResult
+     If endResult == “save”:
+          Set memory = result
+     Else If endResult == “clear”
+          Set memory = 0
+     Else If endResult == “print”:
+          Display memory
+     Else If endResult == “instructions”:
+           Call instructions()
+     Else:    
+          Call goAgain()
+     End If
+     Return memory
+
+Module goAgain():
+     Declare String answer
+     Display “Would you like to enter another calculation?”
+     Input toLower(answer)
+     If answer == “yes”:
+          Call main()
+     Else If answer == “no”
+          Display “Thank you for using the calculator. Goodbye!”
+     Else:
+          Display “I’m sorry, please enter yes or no.”
+          Call goAgain()
+     End If

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SimpleCalculator</string>
+    <string name="stringNine">9</string>
+    <string name="stringEight">8</string>
+    <string name="stringSeven">7</string>
+    <string name="stringSix">6</string>
+    <string name="stringFive">5</string>
+    <string name="stringFour">4</string>
+    <string name="stringThree">3</string>
+    <string name="stringTwo">2</string>
+    <string name="stringOne">1</string>
+    <string name="stringZero">0</string>
+    <string name="stringPlus">+</string>
+    <string name="stringMinus">-</string>
+    <string name="stringDivide">/</string>
+    <string name="stringMultiply">*</string>
+    <string name="stringEquals">=</string>
+    <string name="stringDecimal">.</string>
+    <string name="stringClear">C</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mobile.rasmussen.edu.geocache.MainActivity"
+    android:background="#e3c87f">
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:id="@+id/compass"
+        android:src="@drawable/compass"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonPlay"
+        android:background="@drawable/rounded_button"
+        android:text="@string/StringPlay"
+        android:layout_below="@+id/compass"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonTreasures"
+        android:background="@drawable/rounded_button"
+        android:text="@string/StringTreasures"
+        android:layout_below="@+id/ButtonPlay"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonProfile"
+        android:background="@drawable/rounded_button"
+        android:text="@string/StringProfile"
+        android:layout_below="@+id/ButtonTreasures"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>
