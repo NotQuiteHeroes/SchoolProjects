@@ -31,7 +31,6 @@ int main() {
 
   cout << "Would you like to see the disk movements?" << endl;
   cin >> answer;
-
   if (answer == "Yes" || answer == "yes" || answer == "y" || answer == "Y") {
     verbose = true;
   }
