@@ -10,11 +10,11 @@
 /*
  * 
  */
-int main(int argc, char** argv) {
-    long int binNum, remain, decNum = 0, i=1;
+int main() {
+    long binNum, remain, decNum = 0, i=1;
     
     FILE *fp;
-    fp = fopen("binaryfile.txt", "a+");
+    fp = fopen("binaryfile.txt", "rb+");
     fscanf(fp, "%ld", binNum);
     
     while(binNum ! = 0){
