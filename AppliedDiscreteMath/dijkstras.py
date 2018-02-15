@@ -5,42 +5,42 @@ Applied Discrete Mathematics
 Dijkstra's Algorithm to find shortest path
 '''
 
-import sys  #for maxint
-import heapq  #heapq = priority queue
+import sys  # for maxint
+import heapq  # heapq = priority queue
 
 
 #==============================================================================
 #================================  Vertex  ====================================
 #==============================================================================
 class Vertex:
-    #initializer
+    # initializer
     def __init__(self, node):
         self.id = node
 
-        #empty dictionary to hold neighboring nodes in the form id : cost
+        # empty dictionary to hold neighboring nodes in the form id : cost
         self.adjacent = {}
 
-        #initialize to max distance for all nodes
-        self.distance = sys.maxint
+        # initialize to max distance for all nodes
+        self.distance = float("inf")
 
-        #mark all nodes as unvisited
+        # mark all nodes as unvisited
         self.visited = False
 
-        #predecessor node
+        # predecessor node
         self.previous = None
 
     def add_neighbor(self, neighbor, weight=0):
         self.adjacent[neighbor] = weight
 
-    #get adjacent node ids
+    # get adjacent node ids
     def get_connections(self):
         return self.adjacent.keys()
 
-    #id is node letter ('a', 'b', etc)
+    # id is node letter ('a', 'b', etc)
     def get_id(self):
         return self.id
 
-    #weight = cost to travel
+    # weight = cost to travel
     def get_weight(self, neighbor):
         return self.adjacent[neighbor]
 
@@ -56,14 +56,17 @@ class Vertex:
     def set_visited(self):
         self.visited = True
 
+    def __lt__(self, other):
+        return self.distance < other.distance
+
 
 #==============================================================================
 #================================  Graph  =====================================
 #==============================================================================
 class Graph:
-    #initializer
+    # initializer
     def __init__(self):
-        #empty dictionary that will hold vertices
+        # empty dictionary that will hold vertices
         self.vertices = {}
         self.num_vertices = 0
 
@@ -104,28 +107,28 @@ class Graph:
 #================================  Dijkstra  ==================================
 #==============================================================================
 def dijkstra(aGraph, start, target):
-    #initial distance for start node
+    # initial distance for start node
     start.set_distance(0)
-    #put tuple pair into priority queue
+    # put tuple pair into priority queue
     unvisited = [(v.get_distance(), v) for v in aGraph]
-    #heapify converts list to heap
+    # heapify converts list to heap
     heapq.heapify(unvisited)
 
     while len(unvisited):
-        #pop vertex with smallest distance
+        # pop vertex with smallest distance
         uv = heapq.heappop(unvisited)
         current = uv[1]
-        #once all neighbors have been considered, mark current node as visited
+        # once all neighbors have been considered, mark current node as visited
         current.set_visited()
 
         for next in current.adjacent:
-            #if visited, skip
+            # if visited, skip
             if next.visited:
                 continue
             new_dist = current.get_distance() + current.get_weight(next)
 
             if new_dist < next.get_distance():
-                #if previous distance was greater, change distance to smaller
+                # if previous distance was greater, change distance to smaller
                 next.set_distance(new_dist)
                 next.set_previous(current)
 
