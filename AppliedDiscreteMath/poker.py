@@ -38,6 +38,7 @@ equivalent, with no high card rules.
 #-
 #------------------------------------------------------------------------------
 
+
 def find_most_common(hand):
     handData = Counter(hand)
     return handData.most_common(1)[0]
@@ -56,8 +57,10 @@ def find_most_common(hand):
 #- Does not change card with numerical first character
 #-
 #------------------------------------------------------------------------------
+
+
 def get_rank(hand):
-    numbers = {'T':10, 'J':11, 'Q':12, 'K':13, 'A':14}
+    numbers = {'T': 10, 'J': 11, 'Q': 12, 'K': 13, 'A': 14}
     for i in range(len(hand)):
         if(hand[i][0]) in numbers.keys():
             hand[i] = str(numbers[hand[i][0]]) + hand[i][1]
@@ -70,6 +73,8 @@ def get_rank(hand):
 #- Output: True if hand is both a straight and a flush, otherwise False
 #-
 #------------------------------------------------------------------------------
+
+
 def is_straightFlush(hand):
     convertedHand = get_rank(hand)
 
@@ -92,6 +97,8 @@ def is_straightFlush(hand):
 #- if still none found, return false. If sequence found, return true
 #-
 #------------------------------------------------------------------------------
+
+
 def is_sequence(hand):
     sequence = True
     ace = False
@@ -101,8 +108,8 @@ def is_sequence(hand):
     hand = [int(x) for x in hand]
 
     hand.sort()
-    for x in range(0, len(hand)-1):
-        if not hand[x]+1 == hand[x+1]:
+    for x in range(0, len(hand) - 1):
+        if not hand[x] + 1 == hand[x + 1]:
             sequence = False
 
     if sequence:
@@ -115,8 +122,8 @@ def is_sequence(hand):
                 hand[x] = 1
 
     hand.sort()
-    for x in range(0, len(hand)-1):
-        if not hand[x] + 1 == hand[x+1]:
+    for x in range(0, len(hand) - 1):
+        if not hand[x] + 1 == hand[x + 1]:
             return False
 
     return sequence, handCopy
@@ -132,6 +139,8 @@ def is_sequence(hand):
 #- if length of that set is 1, then all the suits are the same
 #-
 #------------------------------------------------------------------------------
+
+
 def is_flush(hand):
     suits = [x[-1] for x in hand]
     if len(set(suits)) == 1:
@@ -152,6 +161,8 @@ def is_flush(hand):
 #- mostCommon[0] is the most common value
 #-
 #------------------------------------------------------------------------------
+
+
 def is_fourOfAKind(hand):
     handCopy = hand[:]
     hand = [x[:-1] for x in hand]
@@ -174,6 +185,8 @@ def is_fourOfAKind(hand):
 #- mostCommon[0] is the most common value
 #-
 #------------------------------------------------------------------------------
+
+
 def is_threeOfAKind(hand):
     handCopy = hand[:]
     hand = [x[:-1] for x in get_rank(hand)]
@@ -198,6 +211,8 @@ def is_threeOfAKind(hand):
 #- if a[1] = 3 and b[1] = 2, then full house
 #-
 #------------------------------------------------------------------------------
+
+
 def is_fullHouse(hand):
     handCopy = hand[:]
     hand = [x[:-1] for x in get_rank(hand)]
@@ -222,6 +237,8 @@ def is_fullHouse(hand):
 #- if a[1] = 2 and b[1] = 2, then two pair
 #-
 #------------------------------------------------------------------------------
+
+
 def is_twoPair(hand):
     handCopy = hand[:]
     hand = [x[:-1] for x in get_rank(hand)]
@@ -244,6 +261,8 @@ def is_twoPair(hand):
 #- if its 2, then pair found
 #-
 #------------------------------------------------------------------------------
+
+
 def is_pair(hand):
     handCopy = hand[:]
     hand = [x[:-1] for x in get_rank(hand)]
@@ -266,8 +285,10 @@ def is_pair(hand):
 #- indexing sorted list with [0] returns the highest card value
 #-
 #------------------------------------------------------------------------------
+
+
 def get_high(hand):
-    return list(sorted([int(x[:-1]) for x in get_rank(hand)], reverse = True))[0]
+    return list(sorted([int(x[:-1]) for x in get_rank(hand)], reverse=True))[0]
 
 #------------------------------------------------------------------------------
 #- evaluate_hand(hand)
@@ -289,6 +310,8 @@ def get_high(hand):
 #- HIGH CARD       = 1
 #-
 #------------------------------------------------------------------------------
+
+
 def evaluate_hand(hand):
     if is_straightFlush(hand):
         return "STRAIGHT FLUSH", hand, 9
@@ -318,6 +341,8 @@ def evaluate_hand(hand):
 #- sorted sorts list, reverse = True sorts in descending order
 #-
 #------------------------------------------------------------------------------
+
+
 def compare_hands(hand1, hand2):
     hand1Eval, hand2Eval = evaluate_hand(hand1), evaluate_hand(hand2)
     if hand1Eval[2] == hand2Eval[2]:
@@ -342,52 +367,54 @@ def compare_hands(hand1, hand2):
 #- Tie doesn't matter, so assign best hand to first card in that instance
 #-
 #------------------------------------------------------------------------------
+
+
 def find_best_hand(table, hand):
     oneCardHands = [[hand[0], table[0], table[1], table[2], table[3]],
-                [hand[0], table[0], table[1], table[2], table[4]],
-                [hand[0], table[0], table[1], table[3], table[4]],
-                [hand[0], table[0], table[2], table[3], table[4]],
-                [hand[0], table[1], table[2], table[3], table[4]],
-                [hand[1], table[0], table[1], table[2], table[3]],
-                [hand[1], table[0], table[1], table[2], table[4]],
-                [hand[1], table[0], table[1], table[3], table[4]],
-                [hand[1], table[0], table[2], table[3], table[4]],
-                [hand[1], table[1], table[2], table[3], table[4]]]
+                    [hand[0], table[0], table[1], table[2], table[4]],
+                    [hand[0], table[0], table[1], table[3], table[4]],
+                    [hand[0], table[0], table[2], table[3], table[4]],
+                    [hand[0], table[1], table[2], table[3], table[4]],
+                    [hand[1], table[0], table[1], table[2], table[3]],
+                    [hand[1], table[0], table[1], table[2], table[4]],
+                    [hand[1], table[0], table[1], table[3], table[4]],
+                    [hand[1], table[0], table[2], table[3], table[4]],
+                    [hand[1], table[1], table[2], table[3], table[4]]]
 
     twoCardHands = [[hand[0], hand[1], table[0], table[1], table[2]],
-                [hand[0], hand[1], table[0], table[1], table[3]],
-                [hand[0], hand[1], table[0], table[1], table[4]],
-                [hand[0], hand[1], table[0], table[2], table[3]],
-                [hand[0], hand[1], table[0], table[2], table[4]],
-                [hand[0], hand[1], table[0], table[3], table[4]],
-                [hand[0], hand[1], table[1], table[2], table[3]],
-                [hand[0], hand[1], table[1], table[2], table[4]],
-                [hand[0], hand[1], table[1], table[3], table[4]],
-                [hand[0], hand[1], table[2], table[3], table[4]]]
+                    [hand[0], hand[1], table[0], table[1], table[3]],
+                    [hand[0], hand[1], table[0], table[1], table[4]],
+                    [hand[0], hand[1], table[0], table[2], table[3]],
+                    [hand[0], hand[1], table[0], table[2], table[4]],
+                    [hand[0], hand[1], table[0], table[3], table[4]],
+                    [hand[0], hand[1], table[1], table[2], table[3]],
+                    [hand[0], hand[1], table[1], table[2], table[4]],
+                    [hand[0], hand[1], table[1], table[3], table[4]],
+                    [hand[0], hand[1], table[2], table[3], table[4]]]
 
     bestOneCardHand = [hand[0], table[0], table[0], table[1], table[2]]
-    for i in range(0, len(oneCardHands)-1) :
-      currentHand = compare_hands(oneCardHands[i], oneCardHands[i + 1])
-      if currentHand[0] == "Hand2":
-        comparison = compare_hands(bestOneCardHand, oneCardHands[i+1])
-        if comparison[0] == "Hand2":
-            bestOneCardHand = oneCardHands[i+1]
-      else:
-        comparison = compare_hands(bestOneCardHand, oneCardHands[i])
-        if comparison[0] == "Hand2":
-            bestOneCardHand = oneCardHands[i]
+    for i in range(0, len(oneCardHands) - 1):
+        currentHand = compare_hands(oneCardHands[i], oneCardHands[i + 1])
+        if currentHand[0] == "Hand2":
+            comparison = compare_hands(bestOneCardHand, oneCardHands[i + 1])
+            if comparison[0] == "Hand2":
+                bestOneCardHand = oneCardHands[i + 1]
+        else:
+            comparison = compare_hands(bestOneCardHand, oneCardHands[i])
+            if comparison[0] == "Hand2":
+                bestOneCardHand = oneCardHands[i]
 
     bestTwoCardHand = [hand[0], hand[1], table[0], table[1], table[2]]
-    for j in range(0, len(twoCardHands)-1):
-      currentHand = compare_hands(twoCardHands[j], twoCardHands[j+1])
-      if currentHand[0] == "Hand2":
-        comparison = compare_hands(bestTwoCardHand, twoCardHands[j+1])
-        if comparison[0] == "Hand2":
-            bestTwoCardHand = twoCardHands[j+1]
-      else:
-        comparison = compare_hands(bestTwoCardHand, twoCardHands[j])
-        if comparison[0] == "Hand2":
-            bestTwoCardHand = twoCardHands[j]
+    for j in range(0, len(twoCardHands) - 1):
+        currentHand = compare_hands(twoCardHands[j], twoCardHands[j + 1])
+        if currentHand[0] == "Hand2":
+            comparison = compare_hands(bestTwoCardHand, twoCardHands[j + 1])
+            if comparison[0] == "Hand2":
+                bestTwoCardHand = twoCardHands[j + 1]
+        else:
+            comparison = compare_hands(bestTwoCardHand, twoCardHands[j])
+            if comparison[0] == "Hand2":
+                bestTwoCardHand = twoCardHands[j]
 
     currentHand = compare_hands(bestOneCardHand, bestTwoCardHand)
     if currentHand[0] == "Hand2":
@@ -415,6 +442,8 @@ def find_best_hand(table, hand):
 #- **Note, to create set of each type of hand must first map sublists to tuples
 #-
 #------------------------------------------------------------------------------
+
+
 def opponent_odds(table, myHand):
 
     straightFlush = []
@@ -428,10 +457,10 @@ def opponent_odds(table, myHand):
     nothing = []
 
     cards = {"KH", "KD", "KS", "KC", "QH", "QD", "QS", "QC", "JH", "JD", "JS",
-        "JC","TH", "TD", "TS", "TC", "9H", "9D", "9S", "9C", "8H", "8D", "8S",
-        "8C", "7H", "7D", "7S", "7C", "6H", "6D", "6S", "6C", "5H", "5D", "5S",
-        "5C", "4H", "4D", "4S", "4C", "3H", "3D", "3S", "3C", "2H", "2D", "2S",
-        "2C", "AH", "AD", "AS", "AC"}
+             "JC", "TH", "TD", "TS", "TC", "9H", "9D", "9S", "9C", "8H", "8D", "8S",
+             "8C", "7H", "7D", "7S", "7C", "6H", "6D", "6S", "6C", "5H", "5D", "5S",
+             "5C", "4H", "4D", "4S", "4C", "3H", "3D", "3S", "3C", "2H", "2D", "2S",
+             "2C", "AH", "AD", "AS", "AC"}
 
     tableCopy = table[:]
     tableCopy = set(tableCopy)
@@ -447,15 +476,15 @@ def opponent_odds(table, myHand):
         hand = [handCombinations[i][0], handCombinations[i][1]]
 
         oneCardHands = [[hand[0], table[0], table[1], table[2], table[3]],
-                [hand[0], table[0], table[1], table[2], table[4]],
-                [hand[0], table[0], table[1], table[3], table[4]],
-                [hand[0], table[0], table[2], table[3], table[4]],
-                [hand[0], table[1], table[2], table[3], table[4]],
-                [hand[1], table[0], table[1], table[2], table[3]],
-                [hand[1], table[0], table[1], table[2], table[4]],
-                [hand[1], table[0], table[1], table[3], table[4]],
-                [hand[1], table[0], table[2], table[3], table[4]],
-                [hand[1], table[1], table[2], table[3], table[4]]]
+                        [hand[0], table[0], table[1], table[2], table[4]],
+                        [hand[0], table[0], table[1], table[3], table[4]],
+                        [hand[0], table[0], table[2], table[3], table[4]],
+                        [hand[0], table[1], table[2], table[3], table[4]],
+                        [hand[1], table[0], table[1], table[2], table[3]],
+                        [hand[1], table[0], table[1], table[2], table[4]],
+                        [hand[1], table[0], table[1], table[3], table[4]],
+                        [hand[1], table[0], table[2], table[3], table[4]],
+                        [hand[1], table[1], table[2], table[3], table[4]]]
 
         for j in range(0, len(oneCardHands)):
             currentHand = oneCardHands[j]
@@ -481,15 +510,15 @@ def opponent_odds(table, myHand):
                 nothing.append(currentHand)
 
         twoCardHands = [[hand[0], hand[1], table[0], table[1], table[2]],
-                [hand[0], hand[1], table[0], table[1], table[3]],
-                [hand[0], hand[1], table[0], table[1], table[4]],
-                [hand[0], hand[1], table[0], table[2], table[3]],
-                [hand[0], hand[1], table[0], table[2], table[4]],
-                [hand[0], hand[1], table[0], table[3], table[4]],
-                [hand[0], hand[1], table[1], table[2], table[3]],
-                [hand[0], hand[1], table[1], table[2], table[4]],
-                [hand[0], hand[1], table[1], table[3], table[4]],
-                [hand[0], hand[1], table[2], table[3], table[4]]]
+                        [hand[0], hand[1], table[0], table[1], table[3]],
+                        [hand[0], hand[1], table[0], table[1], table[4]],
+                        [hand[0], hand[1], table[0], table[2], table[3]],
+                        [hand[0], hand[1], table[0], table[2], table[4]],
+                        [hand[0], hand[1], table[0], table[3], table[4]],
+                        [hand[0], hand[1], table[1], table[2], table[3]],
+                        [hand[0], hand[1], table[1], table[2], table[4]],
+                        [hand[0], hand[1], table[1], table[3], table[4]],
+                        [hand[0], hand[1], table[2], table[3], table[4]]]
 
         for k in range(0, len(twoCardHands)):
             currentHand = twoCardHands[k]
@@ -524,55 +553,56 @@ def opponent_odds(table, myHand):
     onePair = len(set(map(tuple, onePair)))
     nothing = len(set(map(tuple, nothing)))
 
-    totalPossibleHands = straightFlush + fourOfAKind +fullHouse+flush+straight+threeOfAKind+twoPair+onePair+nothing
+    totalPossibleHands = straightFlush + fourOfAKind + fullHouse + \
+        flush + straight + threeOfAKind + twoPair + onePair + nothing
 
-    straightFlushOdds = float(straightFlush)/totalPossibleHands
-    fourOfAKindOdds = float(fourOfAKind)/totalPossibleHands
-    fullHouseOdds = float(fullHouse)/totalPossibleHands
-    flushOdds = float(flush)/totalPossibleHands
-    straightOdds = float(straight)/totalPossibleHands
-    threeOfAKindOdds = float(threeOfAKind)/totalPossibleHands
-    twoPairOdds = float(twoPair)/totalPossibleHands
-    onePairOdds =  float(onePair)/totalPossibleHands
-    highCardOdds =  float(nothing)/totalPossibleHands
+    straightFlushOdds = float(straightFlush) / totalPossibleHands
+    fourOfAKindOdds = float(fourOfAKind) / totalPossibleHands
+    fullHouseOdds = float(fullHouse) / totalPossibleHands
+    flushOdds = float(flush) / totalPossibleHands
+    straightOdds = float(straight) / totalPossibleHands
+    threeOfAKindOdds = float(threeOfAKind) / totalPossibleHands
+    twoPairOdds = float(twoPair) / totalPossibleHands
+    onePairOdds = float(onePair) / totalPossibleHands
+    highCardOdds = float(nothing) / totalPossibleHands
 
-
-    print "Opponent Hands Information: "
-    print "Total Possible Hands: ", totalPossibleHands
-    print "Straight Flush: "
-    print "     Total Hands: ", straightFlush
-    print "     Probability: ", straightFlushOdds
-    print "Four of a kind: "
-    print "     Total Hands: ", fourOfAKind
-    print "     Probability: ", fourOfAKindOdds
-    print "Full House: "
-    print "     Total Hands: ", fullHouse
-    print "     Probability: ", fullHouseOdds
-    print "Flush: "
-    print "     Total Hands: ", flush
-    print "     Probability: ", flushOdds
-    print "Straight: "
-    print "     Total Hands: ", straight
-    print "     Probability: ", straightOdds
-    print "Three of a Kind: "
-    print "     Total Hands: ", threeOfAKind
-    print "     Probability: ", threeOfAKindOdds
-    print "Two Pair: "
-    print "     Total Hands: ", twoPair
-    print "     Probability: ", twoPairOdds
-    print "One Pair: "
-    print "     Total Hands: ", onePair
-    print "     Probability: ", onePairOdds
-    print "High Card: "
-    print "     Total Hands: ", nothing
-    print "     Probability: ", highCardOdds
+    print("Opponent Hands Information: ")
+    print("Total Possible Hands: ", totalPossibleHands)
+    print("Straight Flush: ")
+    print("     Total Hands: ", straightFlush)
+    print("     Probability: ", straightFlushOdds)
+    print("Four of a kind: ")
+    print("     Total Hands: ", fourOfAKind)
+    print("     Probability: ", fourOfAKindOdds)
+    print("Full House: ")
+    print("     Total Hands: ", fullHouse)
+    print("     Probability: ", fullHouseOdds)
+    print("Flush: ")
+    print("     Total Hands: ", flush)
+    print("     Probability: ", flushOdds)
+    print("Straight: ")
+    print("     Total Hands: ", straight)
+    print("     Probability: ", straightOdds)
+    print("Three of a Kind: ")
+    print("     Total Hands: ", threeOfAKind)
+    print("     Probability: ", threeOfAKindOdds)
+    print("Two Pair: ")
+    print("     Total Hands: ", twoPair)
+    print("     Probability: ", twoPairOdds)
+    print("One Pair: ")
+    print("     Total Hands: ", onePair)
+    print("     Probability: ", onePairOdds)
+    print("High Card: ")
+    print("     Total Hands: ", nothing)
+    print("     Probability: ", highCardOdds)
 
 
 def main():
     myHand = ["QC", "QS"]
     table = ["KD", "KC", "QH", "7D", "4S"]
-    print "My Best Hand: "
-    print (evaluate_hand(find_best_hand(table, myHand)))
+    print("My Best Hand: ")
+    print(evaluate_hand(find_best_hand(table, myHand)))
     opponent_odds(table, myHand)
+
 
 main()
