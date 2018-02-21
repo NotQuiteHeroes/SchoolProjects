@@ -1,5 +1,6 @@
 //Prepared Statement: https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html
 import java.sql.*;
+import java.lang.*;
 import java.awt.Dialog;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -20,6 +21,7 @@ Connector()
 private Connection openConnection()
 {
         try{
+                Class.forName("com.mysql.jdbc.Driver");
                 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbProject", "projectUser", "projectPassword");
                 return con;
         } catch(Exception e) {

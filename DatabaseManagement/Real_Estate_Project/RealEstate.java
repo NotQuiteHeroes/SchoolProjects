@@ -51,7 +51,7 @@ private void setup(RealEstate realEstate) throws SQLException
         //add housesPanel to tabbed pane
         //Parameters are:
         //("Tab Name", icon, individualPanel, "Hover Text")
-        tabbedPane.addTab("Agent Information", propertyIcon, agentInfoPanel, "View Agent Information");
+        tabbedPane.addTab("Agent Information", agentIcon, agentInfoPanel, "View Agent Information");
 
 
         //create panel for add property tab
