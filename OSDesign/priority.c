@@ -15,7 +15,7 @@ int main(){
 
         //sort priority, then sort processTime to match
         for(int m = 0; m < totalProcesses; m++) {
-                for(int n = n+1; n < totalProcesses; n++) {
+                for(int n = m+1; n < totalProcesses; n++) {
                         if(priority[n]<priority[m]) {
                                 temp = priority[m];
                                 priority[m] = priority[n];
