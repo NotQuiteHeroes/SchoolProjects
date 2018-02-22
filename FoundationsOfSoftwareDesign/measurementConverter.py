@@ -5,12 +5,13 @@ def main():
     tbsp = 16
     tsp = 48
 
-    cups = input("Enter number of cups to convert:\n")
+    cups = int(input("Enter number of cups to convert:\n"))
 
-    print("Gallon(s):     %f\n" % (gallon*cups))
-    print("Quart(s):      %f\n" % (quart*cups))
-    print("Pint(s):       %f\n" % (pint*cups))
-    print("Tablespoon(s): %f\n" % (tbsp*cups))
-    print("Teaspoon(s):   %f\n" % (tsp*cups))
+    print("Gallon(s):     %f\n" % (gallon * cups))
+    print("Quart(s):      %f\n" % (quart * cups))
+    print("Pint(s):       %f\n" % (pint * cups))
+    print("Tablespoon(s): %f\n" % (tbsp * cups))
+    print("Teaspoon(s):   %f\n" % (tsp * cups))
+
 
 main()

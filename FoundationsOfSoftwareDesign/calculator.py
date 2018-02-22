@@ -1,17 +1,21 @@
 import sys
 
+
 def main():
     operands = []
     memory = 0
     instructions()
     menu_input(operands, memory)
 
+
 def instructions():
-    instructions = "Welcome to the calculator./n To access memory at any time, type memory in the prompt. \nTo save the last number to memory, type save. \nTo clear the memory, type clear.\nTo see the number stored in memory, type print.\nTo use the number stored in memory, simply use the word memory in place of the digit. \n To see these instructions at any time, type instructions into the prompt.\n"
+    instructions = "Welcome to the calculator.\n To access memory at any time, type memory in the prompt. \nTo save the last number to memory, type save. \nTo clear the memory, type clear.\nTo see the number stored in memory, type print.\nTo use the number stored in memory, simply use the word memory in place of the digit. \n To see these instructions at any time, type instructions into the prompt.\n"
     print instructions
 
+
 def menu_input(operands, memory):
-    menuSelection = raw_input("Please choose an operation:\n\t1. Addition\n\t2. Subtraction\n\t3. Multiplication\n\t4.Division\n\t5.Exponentiation\n\t6. Quit\n")
+    menuSelection = raw_input(
+        "Please choose an operation:\n\t1. Addition\n\t2. Subtraction\n\t3. Multiplication\n\t4.Division\n\t5.Exponentiation\n\t6. Quit\n")
     if(menuSelection.lower() == "instructions"):
         instructions()
         menu_input(operands, memory)
@@ -38,36 +42,41 @@ def menu_input(operands, memory):
         print("Invalid input. Try again.\n")
         menu_input(operands, memory)
 
+
 def getOperands(operands, memory):
     del operands[:]
     size = input("How many numbers will you be using?\n")
     print("Enter each number one at a time. Press enter after each number.")
-    for i in range (0, size):
+    for i in range(0, size):
         operands.insert(i, input())
         if(operands[i] == "memory"):
             operands.insert(i, memory)
 
+
 def add(operands, memory):
     totalAdd = 0
     for j in range(0, len(operands)):
-        totalAdd+=operands[j]
+        totalAdd += operands[j]
     endResult(totalAdd, memory, operands)
+
 
 def subtract(operands, memory):
     totalSubtract = 0
     tempSub = 0
-    for k in range(0, len(operands) -1):
-        tempSub = operands[k] - operands[k+1]
-        totalSubtract+= tempSub
+    for k in range(0, len(operands) - 1):
+        tempSub = operands[k] - operands[k + 1]
+        totalSubtract += tempSub
     endResult(totalSubtract, memory, operands)
+
 
 def multiply(operands, memory):
     totalMultiply = 0
     tempMult = 0
     for m in range(0, len(operands) - 1):
-        tempMult = operands[m] * operands[m+1]
-        totalMultiply+= tempMult
+        tempMult = operands[m] * operands[m + 1]
+        totalMultiply += tempMult
     endResult(totalMultiply, memory, operands)
+
 
 def divide(operands, memory):
     totalDivide = 0
@@ -76,9 +85,10 @@ def divide(operands, memory):
         if(operands[n] == 0):
             print("Error. Cannot divide by zero. Try again.\n")
             menu_input(operands, memory)
-        tempDiv = operands[n] / operands[n+1]
-        totalDivide+=tempDiv
+        tempDiv = operands[n] / operands[n + 1]
+        totalDivide += tempDiv
     endResult(totalDivide, memory, operands)
+
 
 def exponent(memory, operands):
     base = input("Enter the base: \n")
@@ -90,9 +100,11 @@ def exponent(memory, operands):
     exponentiation = base**exp
     endResult(exponentiation, memory, operands)
 
+
 def endResult(value, memory, operands):
     print("Results: %f\n" % value)
-    endResult = raw_input("Press enter when done viewing results, or enter any memory commands(save, clear, print)")
+    endResult = raw_input(
+        "Press enter when done viewing results, or enter any memory commands(save, clear, print)")
     if(endResult == "save"):
         memory = value
     elif(endResult == "clear"):
@@ -103,6 +115,7 @@ def endResult(value, memory, operands):
         instructions()
     goAgain(operands, memory)
 
+
 def goAgain(operands, memory):
     answer = raw_input("Would you like to perform another calculation?\n")
     if(answer.lower() == "yes"):
@@ -112,5 +125,6 @@ def goAgain(operands, memory):
     else:
         print("Invalid input. Please enter yes or no.\n")
         goAgain()
+
 
 main()
