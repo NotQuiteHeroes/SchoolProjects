@@ -1,22 +1,88 @@
-Python lab exercises from Programming Fundamentals
+# Programming Fundamentals
 
-AverageScore.py - Get number of students and their corresponding test scores, then compute and print the average score
+This course was introduction to programming involving Python, Raptor flowcharts, and pseudocode. 
 
-BasicBloodDrive.py - store pints in an array that were donated each day for a week. Calculate average number of pints donated in a week, as well as the highest number donated and the lowest number donated that week.
+Much of the Python code was provided as a skeleton for the assignments, and based upon their pseudocode counterparts. I have since updated the code to work with Python 3.x (as the class used Python 2.7).
 
-BasicDecisions.py - illustrate basic decision structures in Python by determining if a sales team will get a bonus, based on their sales
+## Average Score
 
-BasicDiceGame.py - inputs two players' names, randomly generates a dice roll number for each player, then displays the winner's name
+This program takes a number of students who took a test, between 2 and 30, inputs each of their scores on the test, and displays the average test score. It is meant to be an introduction to input validation.
 
-BasicFunctions.py - illustrate basic function definitions and calls
+### Execution:
+*Note, this program works with both Python2.7 and Python3.x
 
-BasicVarWithFunctions.py - illustrate basic functions with return statements
+![alt text](https://github.com/NotQuiteHeroes/Resources/blob/master/ScreenShots/fundamentalsAverageScore.JPG "Average Score of a Test")
 
-BloodDrive(IO).py - Blood Drive program that inputs pints donated each hour and calculates the average. Also allows saving the donation data to a file, as well as load prevoius data from a file.
+## Basic Blood Drive
 
-BottleRecycle.py - inputs bottles saved in a week, calculates the total bottles for the week, and outputs the total payout
+This program asks the user to enter the number of pints of blood collected each day of a week. It then displays the average number of pints collected, the highest number of pints collected, and the lowest number of pints collected. It is meant to be an introduction to lists(arrays) and loops.
 
-DegreeProgress.py - Inputs student's name, degree, total credits required for degree, and total credits already completed. Outputs student's name, degree, and remaining number of credits
+### Execution:
+*Note, this program works with both Python2.7 and Python3.x
 
-TipCalculator.py - User inputs price of meal. Program calculates a 20% tip, and a 6% tax. Outputs the tip amount, tax amount, and total price of meal plus tax and tip
+![alt text](https://github.com/NotQuiteHeroes/Resources/blob/master/ScreenShots/fundamentalsBasicBloodDrive.JPG "Basic Blood Drive")
 
+## Basic Decisions
+
+This program inputs the monthly sales of a company. If the sales are above 100,000 then the program displays that the employee gets a bonus. If the sales are above 112,500 then the program displays that everyone gets a day off. It is meant as an introduction to decision structures.
+
+### Execution:
+*Note, this program works with both Python2.7 and Python3.x
+
+![alt text](https://github.com/NotQuiteHeroes/Resources/blob/master/ScreenShots/fundamentalsBasicDecisions.JPG "Basic Decision Structures")
+
+## Basic Dice Game
+This program gets two names of the players from the user, rolls a die for each of them, and displays the name of the player with the highest die roll. It is meant as an introduction to random number generation.
+
+### Execution:
+*Note, this program only works with Python2.7
+
+![alt text](https://github.com/NotQuiteHeroes/Resources/blob/master/ScreenShots/fundamentalsBasicDice.JPG "Dice Roll Game")
+
+## Basic Functions
+This program calls a function to display a welcome message, as well as call a function to display a goodbye message. It is meant to be a simple introduction to functions without parameters.
+
+### Execution:
+*Note, this program works with Python2.7 and Python3.x
+
+![alt text](https://github.com/NotQuiteHeroes/Resources/blob/master/ScreenShots/fundamentalsBasicFunctions.JPG "Welcome and Farewell functions")
+
+## Basic Variable with Functions
+This program calls a function to get a name from the user, then calls another function to get an age from the user, then prints a personalized message given the information. It is meant as a simple introduction to functions with return values.
+
+### Execution:
+*Note, this program only works with Python2.7
+
+![alt text](https://github.com/NotQuiteHeroes/Resources/blob/master/ScreenShots/fundamentalsFunctionWithVar.JPG "Functions with return values")
+
+## Blood Drive (IO)
+This program elaborates on the basic blood drive program, adding file io functionality. At the start it will offer the user two options, one to add new information and store it to a file, or the other to display the information stored in a file. If the first option is selected, it will ask the user to enter the number of pints collected each day of the week. It will then store the information in a file, as well as calculate the average of the week and store this to the end of the file. If the user selects the second option, the information will be displayed from the file that was initially saved to. IT is meant as an introduction to file manipulation.
+
+### Execution:
+*Note, this program works with Python2.7 and Python3.x
+
+![alt text](https://github.com/NotQuiteHeroes/Resources/blob/master/ScreenShots/fundamentalsBloodDrive.JPG "Blood Drive with File IO")
+
+## Bottle Recycle
+This program accepts the number of bottles collected in a week, then displays the total number of bottles collected, as well as the payout for the total amount of bottles. It is meant as a collection of previously learned concepts: loops, functions with return values, collecting a running total, and arrays.
+
+### Execution:
+*Note, this program works with Python2.7 and Python3.x
+
+![alt text](https://github.com/NotQuiteHeroes/Resources/blob/master/ScreenShots/fundamentalsBottles.JPG "Bottle Collection")
+
+## Degree Progress
+This program asks the user for their name, their degree name, the number of credits required for said degree, and how many credits the user has already completed. It then displays a message saying the student's name, their degree, and the amount of credits left until graudation. It is a simple introduction to input from user and printing messages with variables.
+
+### Execution:
+*Note, this program only works with Python2.7
+
+![alt text](https://github.com/NotQuiteHeroes/Resources/blob/master/ScreenShots/fundamentalsDegree.JPG "Degree Progress")
+
+## Tip Calculator
+This program asks the user to enter the price of a meal. It will then calculate a 20% tip and a 6% tax, display the values of each, then display the total of the meal + tax + tip. It is meant as an introduction to functions with parameters.
+
+### Execution:
+*Note, this program works with Python2.7 and Python3.x
+
+![alt text](https://github.com/NotQuiteHeroes/Resources/blob/master/ScreenShots/fundamentalsTip.JPG "Tip Calculator")
