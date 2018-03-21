@@ -1,6 +1,6 @@
 # Circle
 
-This program takes the center coordinates of a circle in x,y format, as well as the radius of the circle. It then calculates and displays the circumference and area of the circle. 
+Example of simple inheritance. This program takes the center coordinates of a circle in x,y format, as well as the radius of the circle. It then calculates and displays the circumference and area of the circle. 
 
 ## Files:
 + Point.h/.cpp : Class to implement a single point on a coordinate plane. Requires x and y coordinates. 
