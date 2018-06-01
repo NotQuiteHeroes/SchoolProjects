@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/colorAccent">
+
+   <TableLayout
+       android:layout_width="0sp"
+       android:layout_height="0sp"
+       android:shrinkColumns="*"
+       android:stretchColumns="*"
+       tools:layout_constraintTop_creator="1"
+       tools:layout_constraintRight_creator="1"
+       tools:layout_constraintBottom_creator="1"
+       android:layout_marginStart="1sp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:layout_marginEnd="1sp"
+       app:layout_constraintRight_toRightOf="parent"
+       android:layout_marginBottom="1sp"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       >
+        <!-- Personal Tasks -->
+       <TableRow
+           android:id="@+id/personalRow"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/personalString"
+               android:background="@color/colorPrimaryDark"
+               android:textColor="@color/colorAccent"
+               android:textSize="20sp"
+               android:padding="4sp" />
+       </TableRow>
+        <ScrollView
+            android:id="@+id/personalScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:background="@color/colorAccent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:id="@+id/personalLinear">
+
+            </LinearLayout>
+        </ScrollView>
+
+       <!-- Work Tasks -->
+       <TableRow
+           android:id="@+id/workRow"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/workString"
+               android:background="@color/colorPrimaryDark"
+               android:textColor="@color/colorAccent"
+               android:textSize="20sp"
+               android:padding="4sp" />
+       </TableRow>
+       <ScrollView
+           android:id="@+id/workScroll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:visibility="visible"
+           android:background="@color/colorAccent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/colorAccent"
+               android:orientation="vertical"
+               android:visibility="visible"
+               android:id="@+id/workLinear">
+
+           </LinearLayout>
+       </ScrollView>
+
+       <!-- School tasks -->
+       <TableRow
+           android:id="@+id/schoolRow"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/schoolString"
+               android:background="@color/colorPrimaryDark"
+               android:textColor="@color/colorAccent"
+               android:textSize="20sp"
+               android:padding="4sp" />
+       </TableRow>
+       <ScrollView
+           android:id="@+id/schoolScroll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:visibility="visible"
+           android:background="@color/colorAccent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/colorAccent"
+               android:orientation="vertical"
+               android:visibility="visible"
+               android:id="@+id/schoolLinear">
+
+           </LinearLayout>
+       </ScrollView>
+   </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>

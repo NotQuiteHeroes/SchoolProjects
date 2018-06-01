@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="action_settings">Settings</string>
+    <string name="toDoString">My Tasks</string>
+    <string name="newTaskString">New Task</string>
+    <string name="personalString">Personal</string>
+    <string name="schoolString">School</string>
+    <string name="workString">Work</string>
+    <string name="taskTypeString">Task type...</string>
+    <string name="taskNameString">Task name...</string>
+    <string-array name="task_types">
+        <item>Personal</item>
+        <item>Work</item>
+        <item>School</item>
+    </string-array>
+    <string name="dateString">Pick Date</string>
+    <string name="timeString">Pick Time</string>
+    <string name="addTaskString">Add Task</string>
+    <string name="dateFormatString">%d/%d/%d</string>
+    <string name="timeFormatString">%d:%02d</string>
+    <string name="hourTaskFormatString">%s \t\t %d:%02d </string>
+    <string name="dateTaskFormatString">%s \t\t %d/%d/%d</string>
+</resources>

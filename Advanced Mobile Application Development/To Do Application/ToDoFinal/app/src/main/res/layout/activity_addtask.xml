@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddTaskActivity"
+    tools:showIn="@layout/content_addtask"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+
+        <!---com.eckstein.paige.todoBundle.Task Name-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/taskNameString"
+            android:inputType="text"
+            android:id="@+id/taskName"
+            android:textSize="25sp"
+            android:layout_marginBottom="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="4sp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <!---Dark grey vertical line-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="@color/colorPrimaryDark">
+        </LinearLayout>
+
+        <!---com.eckstein.paige.todoBundle.Task Type drop down menu-->
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskType"
+            android:layout_marginStart="4sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp">
+        </Spinner>
+
+        <!---Dark grey vertical line-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="@color/colorPrimaryDark">
+        </LinearLayout>
+
+        <!---Date button-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dateString"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/dateButton"
+            android:background="@color/colorAccent"/>
+
+        <!---Dark grey vertical line-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="@color/colorPrimaryDark">
+        </LinearLayout>
+
+        <!---Time button-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/timeString"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/timeButton"
+            android:background="@color/colorAccent"/>
+
+        <!---Dark grey vertical line-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="@color/colorPrimaryDark">
+        </LinearLayout>
+
+        <!---Add com.eckstein.paige.todoBundle.Task Button-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/addTaskString"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:id="@+id/addTaskButton"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
