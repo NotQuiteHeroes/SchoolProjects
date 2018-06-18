@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="360sp"
+            android:layout_height="wrap_content"
+            android:hint="@string/startText"
+            android:inputType="textPostalAddress"
+            android:id="@+id/source"/>
+
+        <EditText
+            android:layout_width="360sp"
+            android:layout_height="wrap_content"
+            android:hint="@string/endText"
+            android:inputType="textPostalAddress"
+            android:id="@+id/destination"
+            android:layout_below="@+id/source"/>
+
+        <Button
+            android:layout_width="360sp"
+            android:layout_height="wrap_content"
+            android:text="@string/getDirections"
+            android:id="@+id/directionsButton"
+            android:layout_below="@+id/destination"/>
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="360sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_below="@id/directionsButton"/>
+
+        <ScrollView
+            android:layout_width="360sp"
+            android:layout_height="400sp"
+            android:layout_below="@id/progressBar">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="360sp"
+                android:id="@+id/directionsDisplay"/>
+
+        </ScrollView>
+
+        <fragment
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/source" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
